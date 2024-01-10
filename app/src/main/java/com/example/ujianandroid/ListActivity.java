@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -17,7 +16,7 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        ListView lvNama = (ListView) findViewById(R.id.lvNama);
+        ListView lvNama = findViewById(R.id.lvNama);
 
         Intent intent = getIntent();
         if (intent != null && intent.hasExtra("daftar_nama")) {
@@ -35,6 +34,5 @@ public class ListActivity extends AppCompatActivity {
         } else {
             // ...
         }
-
     }
 }
