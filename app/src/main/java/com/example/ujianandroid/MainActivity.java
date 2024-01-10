@@ -1,14 +1,12 @@
 package com.example.ujianandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,9 +16,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText edNamaDepan = (EditText) findViewById(R.id.edNamaDepan);
-        EditText edNamaBelakang = (EditText) findViewById(R.id.edNamaBelakang);
-        Button btnSimpan = (Button) findViewById(R.id.btnSimpan);
+        EditText edNamaDepan = findViewById(R.id.edNamaDepan);
+        EditText edNamaBelakang = findViewById(R.id.edNamaBelakang);
+        EditText edUmur = findViewById(R.id.edUmur);
+        Button btnSimpan = findViewById(R.id.btnSimpan);
+
         ArrayList<String> daftar_nama = new ArrayList<>();
 
         Intent intent_list = new Intent(MainActivity.this, ListActivity.class);
